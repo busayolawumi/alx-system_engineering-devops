@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "$(tail -n +3 iacta | head -n 1)"
+
