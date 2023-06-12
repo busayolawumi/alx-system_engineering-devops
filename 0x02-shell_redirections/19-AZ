@@ -1,2 +1,2 @@
 #!/bin/bash
-tr '[Ac]' '[Ze]' < input.txt
+tr "Ac" "Ze"
