@@ -4,7 +4,7 @@ include stdlib
 file_line { 'Host name':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => 'Host 54.208.64.8',
+  line   => 'Host 100.26.240.114',
 }
 
 file_line { 'Turn off passwd auth':
