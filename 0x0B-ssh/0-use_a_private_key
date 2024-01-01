@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # connect to my server
 # Specify the server hostname or IP address
-server="54.208.64.8"
+server="100.26.240.114"
 
 # Connect to the server using ssh with specified flags
 ssh -i ~/.ssh/school -o User=ubuntu "$server"
