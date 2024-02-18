@@ -1,6 +1,6 @@
 <h1>Incident Report</h1>
 <h2>Incident Summary</h2>
-<p>On August 10, 2023, at 02:45 AM UTC, the user authentication service experienced a complete outage. The outage lasted for 45 minutes and resulted in a 25% decrease in overall system temusage.</p>
+<p>On February 18, 2024, at 02:45 AM UTC, the user authentication service experienced a complete outage. The outage lasted for 45 minutes and resulted in a 25% decrease in overall system temusage.</p>
 <h2>Root Cause</h2>
 <p>The root cause of the outage was a misconfiguration in the load balancer settings. A recent update to the load balancer configuration inadvertently led to excessive load distribution among backend servers. This imbalance caused server nodes to exceed their capacity, resulting in degraded service performance and eventual unavailability.</p>
 <h2>Timeline</h2>
