@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Get the master process ID
+MASTER_PID=$(pgrep -f "gunicorn master" | head -n 1)
+
+# Check if master process is found
+if [[ -z "$MASTER_PID" ]]; then
+  echo "Error: Gunicorn master process not found!"
+  exit 1
+fi
+
+# Send HUP signal to trigger graceful reload
+kill -HUP "$MASTER_PID"
+
+echo "Sent HUP signal to Gunicorn master process (PID $MASTER_PID)"
+
+# # Optionally monitor reload progress
+# # You can customize the following command to fit your needs
+# echo "Monitoring reload progress (check logs for details):"
+# tail -f /path/to/gunicorn_log.log
+
+echo "Gunicorn reload complete."
